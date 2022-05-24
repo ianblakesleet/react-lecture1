@@ -3,10 +3,10 @@ import Card from '../UI/Card';
 import './ExpenseItem.css'
 
 function ExpenseItem(props){
+   
+    console.log('ExpenseItem evaluated by react')
+     
 
-    const clickHandler = () =>{
-    console.log("button click!")
-}
 
     return (
         
@@ -16,7 +16,6 @@ function ExpenseItem(props){
                 <h2>{props.title}</h2>
                 <div className='expense-item__price'>${props.amount}</div>
             </div>
-            <button onClick={clickHandler}>change title</button>
         </Card>
 
     )
